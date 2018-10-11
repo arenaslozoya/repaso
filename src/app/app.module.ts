@@ -6,11 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { BotonPage } from '../pages/boton/boton';
+import { CardPage } from '../pages/card/card';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    BotonPage,
+    CardPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,9 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    BotonPage,
+    CardPage
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,34 @@
+<!--
+  Generated template for the CardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>card</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   
+    <ion-item>
+        <ion-label>Volumen</ion-label>
+        <ion-toggle [(ngModel)]= "volumen2" checked="false"></ion-toggle>
+      </ion-item>
+   
+  <ion-list *ngIf = "volumen2">
+        <ion-list-header>
+          Volumen : {{volumen}}
+        </ion-list-header>
+    <ion-item>
+        <ion-range [(ngModel)]="volumen">
+          <ion-icon range-left small name="volume-down"></ion-icon>
+          <ion-icon range-right name="volume-up"></ion-icon>
+        </ion-range>
+      </ion-item>    </ion-list>
+  
+</ion-content>

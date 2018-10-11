@@ -7,8 +7,59 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-row>
+    <ion-col>
+      <button ion-button (click)= "clickBoton()" >Button</button>
+    </ion-col>
+
+    <ion-col>
+  <ion-card (click) = "clickCard()">
+    <ion-card-header>
+      texto
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Add card content here! -->
+    </ion-card-content>
+  </ion-card>
+
+</ion-col>
+    <button ion-button>Button</button>
+</ion-row>
+  
+
+<ion-row>
+    <ion-col>
+      <button ion-button>Button</button>
+    </ion-col>
+
+    <ion-col>
+  <ion-card>
+    <ion-card-header>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Add card content here! -->
+    </ion-card-content>
+  </ion-card>
+
+</ion-col>
+    <button ion-button>Button</button>
+</ion-row>
+
+<ion-row>
+    <ion-col>
+      <button ion-button>Button</button>
+    </ion-col>
+
+    <ion-col>
+  <ion-card>
+    <ion-card-header>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Add card content here! -->
+    </ion-card-content>
+  </ion-card>
+
+</ion-col>
+    <button ion-button>Button</button>
+</ion-row>
 </ion-content>
